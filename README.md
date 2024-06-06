@@ -149,3 +149,7 @@ Open Nodes: Ideal for real-time, live network monitoring and for use cases where
 
 Local Blockchain: Ideal for development, testing, and scenarios where controlled experiments are necessary.
 By combining both approaches, the application can be robustly tested and deployed for real-world monitoring and development purposes.
+
+
+### Email Configuration
+Update the SMTP and email configurations in both alerts.go and config.json file.
