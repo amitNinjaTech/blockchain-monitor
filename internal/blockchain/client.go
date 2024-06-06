@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/yourusername/blockchain-monitor/pkg/blockchain"
+	"github.com/amitNinjaTech/blockchain-monitor/pkg/blockchain"
 )
 
 type Client struct {
