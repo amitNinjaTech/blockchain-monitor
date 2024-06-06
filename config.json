@@ -1,0 +1,6 @@
+{
+    "blockchain": {
+        "node_url": "https://mainnet.infura.io/v3/89c618cf040343bb9c41536997d337fa"
+    },
+    "log_level": "info"
+}
