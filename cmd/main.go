@@ -1,27 +1,24 @@
 package main
 
 import (
-	"log"
-
-	"github.com/amitNinjaTech/blockchain-monitor/config"
-	"github.com/amitNinjaTech/blockchain-monitor/internal/blockchain"
-	"github.com/amitNinjaTech/blockchain-monitor/internal/utils"
+    "blockchain-monitor/config"
+    "blockchain-monitor/internal/blockchain"
+    "blockchain-monitor/internal/utils"
+    "log"
 )
 
 func main() {
-    // Load configuration
-    cfg, err := config.LoadConfig()
+    cfg, err := config.LoadConfig("config.json")
     if err != nil {
-        log.Fatalf("Could not load configuration: %v", err)
+        log.Fatalf("Failed to load config: %v", err)
     }
 
-    // Initialize logger
-    logger := utils.NewLogger(cfg.LogLevel)
-
-    // Initialize blockchain client
     client := blockchain.NewClient(cfg.Blockchain)
-
+    monitor := blockchain.NewMonitor(client)
+    
     // Start monitoring
-    monitor := blockchain.NewMonitor(client, logger)
-    monitor.Start()
+    go monitor.Start()
+
+    // Prevent main from exiting
+    select {}
 }
