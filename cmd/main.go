@@ -3,9 +3,9 @@ package main
 import (
 	"log"
 
-	"github.com/yourusername/blockchain-monitor/config"
-	"github.com/yourusername/blockchain-monitor/internal/blockchain"
-	"github.com/yourusername/blockchain-monitor/internal/utils"
+	"github.com/amitNinjaTech/blockchain-monitor/config"
+	"github.com/amitNinjaTech/blockchain-monitor/internal/blockchain"
+	"github.com/amitNinjaTech/blockchain-monitor/internal/utils"
 )
 
 func main() {
