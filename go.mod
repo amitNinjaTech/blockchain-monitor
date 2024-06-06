@@ -1,4 +1,4 @@
-module github.com/yourusername/blockchain-monitor
+module github.com/amitNinjaTech/blockchain-monitor
 
 go 1.16
 
