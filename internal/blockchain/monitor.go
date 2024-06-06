@@ -3,7 +3,7 @@ package blockchain
 import (
 	"time"
 
-	"github.com/yourusername/blockchain-monitor/internal/utils"
+	"github.com/amitNinjaTech/blockchain-monitor/internal/utils"
 )
 
 type Monitor struct {
