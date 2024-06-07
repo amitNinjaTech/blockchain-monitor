@@ -74,7 +74,11 @@ $(pwd)/config.json:/app/config.json blockchain-monitor
 Verify:
 
 ### Check the logs to ensure the application is running and fetching metrics:
+```
 docker logs blockchain-monitor
+```
+
+
 Bitcoin (Using Bitcoin Core)
 
 Install and Run Bitcoin Core:
